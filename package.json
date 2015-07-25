@@ -1,6 +1,6 @@
 {
   "name": "autobadger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Executes `make test` and generates the markdown link to the corresponding build badge.",
   "main": "index.js",
   "bin": {
@@ -9,7 +9,7 @@
   "man": "./man/man1/autobadger.1",
   "scripts": {
     "test": "make test"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/vzaccaria/autobadger.git"
@@ -33,8 +33,8 @@
     "mocha": "*",
     "chai": "*",
     "chai-as-promised": "*",
-	  "mustache": "~2.1.2",
-	  "stupid-replace": "~0.0.3",
-	  "git-hist": "*"
+    "mustache": "~2.1.2",
+    "stupid-replace": "~0.0.3",
+    "git-hist": "*"
   }
 }
