@@ -1,7 +1,8 @@
 .TH "" "" "" "" ""
 .PP
-[IMAGE: status (https://img.shields.io/badge/build-fails-red.svg)] #
-autobadger > No name given yet
+[IMAGE: status (https://img.shields.io/badge/build-ok-brightgreen.svg)]
+# autobadger > Executes \f[C]make\ test\f[] and generates the markdown
+link to the corresponding build badge.
 .SS Install
 .PP
 Install it with
@@ -26,6 +27,14 @@ Commands:
 Arguments:
 \f[]
 .fi
+.SS Prerequisite
+.PP
+Have a \f[C]makefile\f[] with a \f[C]test\f[] target ready; autobadger
+tries to build it and emits a badge link (markdown) depending on the
+outcome.
+.PP
+Ideally, you should have a pre\-commit hook that invokes it and puts it
+into the readme file.
 .SS Author
 .IP \[bu] 2
 Vittorio Zaccaria
@@ -38,3 +47,7 @@ Released under the BSD License.
 .IP \[bu] 2
 produce svg status info about passing build \-\- Jul 25th
 15 (../../commit/904602c2b7196fc5949a657d169abde73dc2197e)
+.SH Bug fixes
+.IP \[bu] 2
+update docs and tests \-\- Jul 25th
+15 (../../commit/278108fa562621ad60e00691a06fb483a7bfc17d)
