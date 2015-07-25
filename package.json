@@ -1,7 +1,7 @@
 {
   "name": "autobadger",
   "version": "0.0.1",
-  "description": "No name given yet",
+  "description": "Executes `make test` and generates the markdown link to the corresponding build badge.",
   "main": "index.js",
   "bin": {
     "autobadger": "./index.js"
